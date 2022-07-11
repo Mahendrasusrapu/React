@@ -1,0 +1,17 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+const fname = "Mahendra sharma";
+
+const lname = "Susarapu";
+
+
+const n = "7";
+
+ReactDOM.render(<div>
+  <h1>Hai {fname} {lname}</h1>
+  <h1>Hai {fname + " " + lname}</h1> 
+  <h1>Hai {`${fname} ${lname}`}</h1>
+  <p>Your lucky number is {n} </p>
+  </div>,
+   document.getElementById("root"));
