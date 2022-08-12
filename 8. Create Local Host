@@ -1,0 +1,13 @@
+Check node is up to date
+install vs code
+create React app
+/* in command prompt */
+-->npx create-react-app my-app
+it is a package run tool that comes with 5.2+
+install all react files into your local react path
+-->cd my-app
+(change dictaroy)
+--> npm start
+which is start and set the environment to the react files and local host too.
+
+Run app
