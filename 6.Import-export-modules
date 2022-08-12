@@ -1,0 +1,28 @@
+/* index.js  */
+import React from "react";
+import ReactDOM from "react-dom";
+import pie,{doublepi,triplepi} from "./math.jsx"
+
+ReactDOM.render(
+  <ul>
+    <li>{pie}</li>
+    <li>{doublepi()}</li>
+    <li>{triplepi()}</li>
+  </ul>,
+  document.getElementById("root")
+);
+
+/* math.jsx */
+
+const pi=3.1415962;
+
+function doublepi(){
+  return pi*2;
+}
+
+function triplepi(){
+  return pi*3;
+}
+
+export default pi;
+export {doublepi,triplepi};
