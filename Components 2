@@ -1,0 +1,51 @@
+/* index.js */
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App"
+
+
+ReactDOM.render(
+  
+  <App />,
+  document.getElementById("root")
+);
+
+/* App.jsx */
+
+import React from "react";
+import Heading from "./Heading";
+import List from "./List";
+
+function App(){
+  return <div>
+  <Heading />
+  <List />
+  </div>
+}
+export default App;
+
+/* Heading.jsx */
+
+import React from "react";
+
+function Heading(){
+  return <h1>RGUKT - SKLM</h1>
+}
+
+export default Heading;
+
+/* List.jsx */
+import React from "react"; 
+
+function List() {
+  return(
+    <ul>
+    <li>CSE</li>
+    <li>ECE</li>
+    <li>MECH</li>
+    <li>CIVIL</li>
+    </ul>);
+  }
+
+export default List; 
