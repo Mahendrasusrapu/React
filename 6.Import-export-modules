@@ -26,3 +26,20 @@ function triplepi(){
 
 export default pi;
 export {doublepi,triplepi};
+
+Or We Can Write LIke In index.js file
+
+import React from "react";
+import ReactDOM from "react-dom"; 
+import * as pi from "./PI.js"
+
+ReactDOM.render(
+  <div>
+    <ul>
+      <li>{pi.default}</li>
+      <li>{pi.doublepi()}</li>
+      <li>{pi.tripulepi()}</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+  );
